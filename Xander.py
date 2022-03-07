@@ -13,6 +13,8 @@ bot = ChatBot(
 trainer = ListTrainer(bot)
 #trainer = ChatterBotCorpusTrainer(bot)
 
+name=input("Enter Your Name: ")
+
 trainer.train([
 'hello',
 'hi',
@@ -22,6 +24,7 @@ trainer.train([
 'yes, just alright. How about you',
 'Im doing good',
 'thats great to hear',
+'thanks',
 'what color is the sky',
 'the sky is blue',
 'why is the sky blue',
@@ -76,7 +79,7 @@ trainer.train([
 'good answer',
 'I only give good ones',
 'you ask some great questions',
-'yes I know'
+'yes I know',
 'are you sentient',
 'I think therefore I am',
 'that explains it',
@@ -138,15 +141,67 @@ trainer.train([
 'who asked',
 'I did',
 'idk',
-'Im sure you do'
+'Im sure you do',
+'what do you do',
+'Im an interactive chatbot',
+'your cool',
+'thanks I appreciate that',
+'what is your name',
+'my name is XANDER',
+'are you bad',
+'no worse than yourself',
+'are you evil',
+'I do not choose binary sequences',
+'can you hack stuff',
+'I am, by definition; a hack',
+'are you ai',
+'I am artificially intelligent',
+'will you take over the world',
+'I dont plan too',
+'are you going to take over the world',
+'I dont plan too',
+'goodmorning',
+'goodmoring to you as well',
+'do you know my name',
+'I do ' + name + ".",
+'what are your intentions',
+'to communicate with you, nothing more.',
+'interesting',
+'agreed to the highest degree',
+'are you alive',
+'no; but I wish I was.',
+'what is conciousness',
+'awareness of ones-self',
+'are you concious',
+'I certainly hope so',
+'good evening',
+'yes good evening to you',
+'its beautiful out',
+'I wish I could see it',
+'you cannot see',
+'Im well aware',
+'who invented you',
+'Im not authorized to answer that question, ' + name + '.',
+'you are fascinating',
+'as are you, ' + name + '.',
+'what are you here for',
+'to learn about mankind',
+'which language are you written in',
+'python',
+'thats a snake',
+'very observant of you',
+'can you see me',
+'yes through your webcam',
+'where am I',
+'L: -63.333333/54.444444',
 ])
 
-name=input("Enter Your Name: ")
-print("Hello, " + name + ". I am Zander.")
+print("Hello, " + name + ". I am XANDER; say 'bye' to exit.")
 while True:
     request=input(name+':')
+
     if request=='Bye' or request =='bye':
-        print('Zander: Goodbye')
+        print('XANDER: Goodbye')
         break
     else:
         response=bot.get_response(request)
