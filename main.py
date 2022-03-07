@@ -134,7 +134,11 @@ trainer.train([
 'why dont you tell her',
 'Im too shy',
 'tuff',
-'not tough enough'
+'not tough enough',
+'who asked',
+'I did',
+'idk',
+'Im sure you do'
 ])
 
 name=input("Enter Your Name: ")
