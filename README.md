@@ -1,2 +1,4 @@
-# This is an interactive chatbot designed using the CHATTERBOT framework; written in python.
+# XANDER:
+is an Interactive Chatbot designed using the Chatterbot-Framework; written in python.
+
  
