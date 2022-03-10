@@ -12,7 +12,7 @@ words = " "
 def faketype(words):
   words
   for char in words:
-    time.sleep(random.choice([0.3, 0.11, 0.08, 0.07,   0.07, 0.07, 0.06, 0.06, 0.05, 0.01]))
+    time.sleep(random.choice([0.3, 0.11, 0.08, 0.07, 0.07, 0.07, 0.06, 0.06, 0.05, 0.01]))
     sys.stdout.write(char)
     sys.stdout.flush()
   time.sleep(1)
@@ -21,8 +21,12 @@ def faketype(words):
 bot = ChatBot(
     'XANDER',  
     logic_adapters=[
-        'chatterbot.logic.BestMatch',
-      ],
+        {
+            'import_path': 'chatterbot.logic.BestMatch',
+            'default_response': 'I am sorry, but I do not understand.',
+            'maximum_similarity_threshold': 0.20
+        },
+        ],
 )
 
 #trainer = ListTrainer(bot)
